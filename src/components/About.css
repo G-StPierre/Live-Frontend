@@ -1,0 +1,52 @@
+.about-bio {
+    color: white;
+    padding-left: 1rem;
+    /* Maybe font or size changes here? */
+}
+
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.about-extra {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: 40%;
+}
+
+/* Might want a media query for ~300px */
+.about-links {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5vw;
+}
+
+.about-links:hover{
+    color: #646cff;
+}
+
+.following-container {
+    align-self: flex-end;
+    padding: 0.5rem;
+}
+
+.following-container > button {
+    border: 1px solid #646cff;
+    border-radius: 8px;
+    background-color: #646cff;
+    color: white;
+    padding: 0.5rem;
+}
+
+.about-link-container {
+    padding: 0.5rem;
+}

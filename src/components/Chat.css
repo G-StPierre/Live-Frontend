@@ -1,0 +1,90 @@
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: 0;
+    
+}
+span {
+    color: white;
+    text-align: center;
+}
+
+.chat-container{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 25%;
+    border: 1px solid #646cff;
+    border-radius: 8px;
+}
+
+.chat-input{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-self: flex-end;
+    margin-top: auto;
+    width: 100%;
+}
+
+.chat-input input{
+    flex-grow: 1;
+    padding: 0.5em;
+    border: 1px solid #646cff;
+    border-radius: 8px;
+    margin: 0.5em;
+    align-self: flex-end;
+    
+}
+
+.chat-input button{
+    padding: 0.5em;
+    border: 1px solid #646cff;
+    border-radius: 8px;
+    margin: 0.5em;
+    background-color: #646cff;
+    color: white;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+}
+
+.even-chat{
+    /* background-color: red; */
+}
+
+.odd-chat{
+    /* background-color: grey; */
+}
+
+
+.chat-message {
+    /* display: block; */
+    width: 100%;
+}
+
+.chat-login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #646cff;
+    color: white;
+    border-radius: 8px;
+    padding: 1em;
+    margin: 1em;
+}
+
+.chat-message:hover{
+    background-color: #646cff;
+    color: white;
+    cursor: pointer;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}

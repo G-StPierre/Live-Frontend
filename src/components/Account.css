@@ -1,0 +1,138 @@
+.account-container {
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    background-color: #242424;
+    /* color: #646cff; */
+    color: white;
+}
+
+.account-container h3 {
+    text-align: center;
+    color: white;
+}
+
+.account-settings {
+    display: flex;
+    width: 75%;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 2rem;
+    flex-basis: 25%;
+    border: 1px solid darkgrey;
+    border-radius: 8px;
+    background-color: #19191B;
+    color: #646cff;
+}
+
+.form-row {
+    padding: 0.5rem;
+    display: flex;
+    justify-content: flex-end;
+    /* min-width: 30%;
+    width: 50%; */
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-top: 1rem;
+}
+
+.link-options {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 1rem;
+}
+
+.individual-link {
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 0.5rem;
+}
+
+.individual-link input {
+    flex: 1;
+    background-color: darkgrey;
+}
+
+.form-row label {
+    margin-right: 2rem;
+}
+
+input {
+    background-color: darkgrey;
+    color: #646cff
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.form-row textarea {
+    flex: 1;
+    background-color: darkgrey;
+    color: #646cff;
+}
+
+.form-row button {
+    padding: 0.5em;
+    border: 1px solid #646cff;
+    border-radius: 8px;
+    background-color: #646cff;
+    color: white;
+}
+
+.password-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.pass-options {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    width: 75%;
+    
+}
+
+.pass-row {
+    display: flex;
+    flex: 1;
+}
+
+.pass-row input {
+    flex: 1;
+}
+
+/* .pass-row{
+
+} */
+
+@media screen and (max-width: 768px) {
+    .form-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .account-settings {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 0;
+    }
+
+    .form-row label {
+        text-align: center;
+        margin-right: 0;
+    }
+}	
