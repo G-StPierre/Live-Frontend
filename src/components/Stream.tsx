@@ -8,11 +8,13 @@ import chatService from '../services/ChatService';
 
 const Stream = (props: {username?: string}) => {
     
+    const [streamUrl, setStreamUrl] = useState<string>("")
+
+
     useEffect(() => {       
         async function fetchData() {
-            console.log("fetching data")
             const data = await getUser(props.username!);
-            console.log(data);
+            setStreamUrl(data.streamurl);
         }
         fetchData()
     }, [])
@@ -25,7 +27,7 @@ const Stream = (props: {username?: string}) => {
                 <AzureMP
                 className = "azure-player player"
                 skin="amp-flush"
-                src={[{src: "https://caligula-cact.streaming.media.azure.net/77986f41-448e-4d1d-aad4-48ed8605e5ba/output-20230624-201447-manifest.ism/manifest(format=m3u8-cmaf)", type: "application/vnd.ms-sstr+xml" }]}
+                src={[{src: {streamUrl}, type: "application/vnd.ms-sstr+xml" }]}
                 />
                 <About username={props.username}/>
             </div>
